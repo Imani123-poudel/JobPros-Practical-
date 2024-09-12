@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JobPros</title>
+        <link rel="stylesheet" href="css/job.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+
+    <body>
+
+         <!-- navbar  Section-->
+         <nav class="navbar">
+            <div id="nav" class="obj-width">
+                <a href="Home.html"> <img class="logo" src="image/logo.png" alt=""> </a>
+
+                <ul id="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="jobs.html">All Jobs</a></li>
+                    <li> <a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html">Account</a></li>
+                    <button id="w-btn"><a href="login.html">Join Us</a></button>
+                 </ul>
+
+                 <i  id="menu-btn" class='bx bx-menu'></i>
+
+
+                
+            </div>
+        </nav>
+          <!-- navbar  Section-->
+
+           <!-- section of jobs  -->
+
+           
+      <!-- filtering job in this section -->
+
+      <section class="job-filter">
+        <h1 class="heading">Filter Job</h1>
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>Job Title <span>*</span></p>
+                    <input type="text" name="title" placeholder="Keyword Category or Company" required maxlength="20" class="input">
+                </div>
+                <div class="box">
+                    <p>Job Location</p>
+                    <input type="text" name="Location" placeholder="City, State" required maxlength="30" class="input">
+                </div>
+            </div>
+            <div class="dropdown-container">
+               <div class="dropdown">
+                <input type="text" readonly placeholder="Data Posted" name="date" maxlength="20" class="choice">
+                <div class="lists">
+                    <p class="items">Today</p>
+                    <p class="items">2 Days ago</p>
+                    <p class="items">3 Days ago</p>
+                    <p class="items">6 Days ago</p>
+                    <p class="items">9 Days ago</p>
+                    <p class="items">12 Days ago</p>
+                    <p class="items">15 Days ago</p>
+                    <p class="items">25 Days ago</p>
+                    <p class="items">30 Days ago</p>
+                </div>
+               </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly name="date" placeholder="Estimated Salary" maxlength="20" class="choice">
+                    <div class="lists">
+                        <p class="items">1K or Less</p>
+                        <p class="items">1K - 5K</p>
+                        <p class="items">5K - 10K</p>
+                        <p class="items">10K - 20K</p>
+                        <p class="items">20K - 30K</p>
+                        <p class="items">30K - 40K</p>
+                        <p class="items">40K - 50K</p>
+                        <p class="items">50K - 1Lakh</p>
+                        <p class="items">1Lakh - 5Lakh</p>
+                        <p class="items">Negotiable</p>
+                    </div>
+                </div>
+
+               <div class="dropdown">
+                <input type="text" readonly name="date" placeholder="Type of Job" maxlength="20" class="choice">
+                <div class="lists">
+                    <p class="items">Full Time</p>
+                    <p class="items">Part time</p>
+                    <p class="items">Internship</p>
+                    <p class="items">Contract</p>
+                    <p class="items">Temporary</p>
+                    <p class="items">Fresher</p>
+                </div>
+               </div>
+
+               <div class="dropdown">
+                <input type="text" readonly  name="date" placeholder="Education Level" maxlength="20" class="choice">
+                    <div class="lists">
+                        <p class="items">10th Pass</p>
+                        <p class="items">12th Pass</p>
+                        <p class="items">Bachelor's Degree</p>
+                        <p class="items">Master's Degree</p>
+                        <p class="items">Bachelor's Running</p>
+                        <p class="items">Master's Running</p>
+                    </div>
+               </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly name="date" placeholder="Work Shifts" maxlength="20" class="choice">
+                    <div class="lists">
+                        <p class="items">Day(9:00 - 5:00)</p>
+                        <p class="items">Day(11:00 - 2:00)</p>
+                        <p class="items">Online(9:00 - 5:00)</p>
+                        <p class="items">Online(4:00 - 11:00)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    
+      </section>
+
+
+
+
+       <!-- filtering job in this section -->
+
+      <!-- all jobs section -->
+      <section class="jobs-container">
+
+        <h1 class="heading"> All Jobs</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/data analyst.jpg" alt="">
+                    <div>
+                        <h3>Digital Home International Electronics</h3>
+                        <p>Apply Before: 2 hours from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Data Analyst / MIS</h3>
+                <p class="location">Job Location :- <span>Thaiba, Lalitpur</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                <p class="level"> Job Level :- <span>Entry Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/graphic.jpg" alt="">
+                    <div>
+                        <h3>ads!digital</h3>
+                        <p> Apply Before: 1 week, 6 days from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Graphic Designer</h3>
+                <p class="location">Job Location :- <span>Durbarmarg, Yak & Yeti Road</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/uiux.png" alt="">
+                    <div>
+                        <h3>Nest Nepal</h3>
+                        <p>Apply Before: 1 week, 6 days from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Junior UI/UX Designer</h3>
+                <p class="location">Job Location :- <span>Kathmandu, Bāgmatī, Nepal</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/full stack.jpg" alt="">
+                    <div>
+                        <h3>Zum Rides Pvt. Ltd</h3>
+                        <p>Apply Before: 1 week, 6 days from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Full Stack Developer</h3>
+                <p class="location">Job Location :- <span>Dillibazar, Kathmandu</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/QA engineer.jpg" alt="">
+                    <div>
+                        <h3>TechHaus</h3>
+                        <p>Apply Before: 1 week, 3 days from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Senior QA/QC Engineer</h3>
+                <p class="location">Job Location :- <span>Kathmandu</span></p>
+                <p class="Salary">Offered Salary :- <span>NRs. 80k - 10k Monthly</span></p>
+                <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/digital marketing.jpg" alt="">
+                    <div>
+                        <h3>Pioneer Trade Concern</h3>
+                        <p>Apply Before: 2 days, 2 hours from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Digital Marketing Executive</h3>
+                <p class="location">Job Location :- <span>Kathmandu</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/software engineering.jpg" alt="">
+                    <div>
+                        <h3>Cedar Gate Services</h3>
+                        <p>Apply Before: 5 days, 2 hours from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Software Engineer (Power BI)</h3>
+                <p class="location">Job Location :- <span>Lalitpur</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                    <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/php.jpg" alt="">
+                    <div>
+                        <h3>Nydoz</h3>
+                        <p>Apply Before: 1 week, 4 days from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Senior PHP / Laravel Developer</h3>
+                <p class="location">Job Location :- <span>TNew Baneshwor, Kathmandu</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                    <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="image/full stack.jpg" alt="">
+                    <div>
+                        <h3>Zum Rides Pvt. Ltd</h3>
+                        <p>Apply Before: 1 week, 6 days from now</p>
+                    </div>
+                </div>
+                <h3 class="job-title">Flutter Developer</h3>
+                <p class="location">Job Location :- <span>Dillibazar, Kathmandu</span></p>
+                <p class="Salary">Offered Salary :- <span>Negotiable</span></p>
+                <p class="level"> Job Level :- <span>Mid Level</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-briefcase"></i> <span>Full Time</span></p>
+                    <p><i class="fas far fa-clock"></i> <span> Day Shift (9:00-5:00)</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn"> View Details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+      </section>
+       <!-- all jobs section -->
+          
+
+        
+             <!-- footer section -->
+
+      <footer class="footer">
+       
+        <section class="grid">
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="home.html"> <i class="fas fas fa-angle-right"></i> Home</a>
+                <a href="about.html"> <i class="fas fas fa-angle-right"></i> About Us</a>
+                <a href="jobs.html"> <i class="fas fas fa-angle-right"></i> All Jobs</a>
+                <a href="contact.html"> <i class="fas fas fa-angle-right"></i>Contact Us</a>
+                <a href="#"> <i class="fas fas fa-angle-right"></i> Filter Search</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"> <i class="fas fas fa-angle-right"></i> Account</a>
+                <a href="login.html"> <i class="fas fas fa-angle-right"></i> Login</a>
+                <a href="register.html"> <i class="fas fas fa-angle-right"></i> Register</a>
+                <a href="#"> <i class="fas fas fa-angle-right"></i> Post Job</a>
+                <a href="#"> <i class="fas fas fa-angle-right"></i> Dashboard</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"> <i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"> <i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"> <i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+        </section>
+        
+        <div class="credit">&copy; Copyright @ 2024 by <span>JobPros Teams</span> | All Right Reserved </div>
+
+
+
+      </footer>
+
+       <!-- footer section -->
+
+        <script src="js/job.js"></script>
+        <script>
+
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.querySelector('.choice').addEventListener('click', () => {
+                    dropdown.classList.tpggle('active');
+                });
+
+                dropdown.querySelectorAll('.items').forEach( item => {
+                    item.addEventListener('click', () => {
+                        dropdown.querySelector('.choice').value = item.textContent;
+                    });
+                });
+            });
+            
+
+        </script>
+    </body>
+
+</html>
