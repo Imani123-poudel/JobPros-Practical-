@@ -43,12 +43,17 @@
                     <div class="input-group">
                         <div class="input-field" id="namefield">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Full Name">
                         </div>
 
                         <div class="input-field">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" placeholder="Email">
+                            <i class="fas fa-phone"></i>
+                            <input type="number" required min="0" max="9999999999" maxlength="20" placeholder="Phone number" id="numberfield">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fas fa-envelope "></i>
+                            <input type="email" placeholder="Email Address">
                         </div>
 
                         <div class="input-field">
@@ -126,11 +131,13 @@
             let signupBtn = document.getElementById('signupBtn');
             let signinBtn = document.getElementById('signinBtn');
             let namefield = document.getElementById('namefield');
+            let numberfield = document.getElementById('numberfield');
             let title = document.getElementById('title');
 
 
             signinBtn.onclick = function(){
                 namefield.style.maxHeight = "0";
+                numberfield.style.maxHeight = "-12px";
                 title.innerHTML = "Sign In";
                 signupBtn.classList.add("disable");
                 signinBtn.classList.remove("disable");
@@ -138,6 +145,7 @@
 
             signupBtn.onclick = function(){
                 namefield.style.maxHeight = "60px";
+                numberfield.style.maxHeight = "120px";
                 title.innerHTML = "Sign Up";
                 signupBtn.classList.remove("disable");
                 signinBtn.classList.add("disable");
