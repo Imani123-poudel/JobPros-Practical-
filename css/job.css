@@ -9,6 +9,9 @@
   --light-bg:#eee;
   --dark:#0b3527;
   --white:#fff;
+  --copyright:#53685f;
+  --black: #000;
+  --light-black: #3b3a3a;
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.2);
   --border:.1rem solid rgba(0,0,0,.2);
   --color: rgb(0, 0, 0);
@@ -103,7 +106,7 @@ h3 {
 }
 
 #w-btn{
-  margin-left: 40px;
+  margin-left: 60px;
   background-color: var(--white);
   color: var(--main-color);
   padding: 9px ;
@@ -113,7 +116,7 @@ h3 {
   width: 12rem;
   box-shadow: var(--box-shadow) ;
   border: none;
-  margin-right: 8rem;
+  margin-right: 3rem;
 }
 
 #w-btn:hover{
@@ -130,6 +133,8 @@ h3 {
   max-width: 1300px;
   margin: auto;
 }
+
+/* navbar section */
 
 .navbar{
   background-color: var(--main-color);
@@ -162,10 +167,10 @@ h3 {
 
 #menu li a{
   color: var(--white);
-  margin-left: 60px;
+  margin-left: 50px;
   font-size: 1.5rem;
   font-weight: 500;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 #menu-btn{
@@ -181,6 +186,8 @@ h3 {
 #w-btn a:hover{
   color: var(--white);
 }
+
+/* navbar section */
 
 .hero{
   background-color: var(--main-color);
@@ -257,7 +264,7 @@ h3 {
 
 .category .box-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30rem);
+  grid-template-columns: repeat(auto-fit, 32rem);
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
@@ -321,13 +328,13 @@ h3 {
   gap: 1rem;
   align-items: flex-start;
   justify-content: center;
- 
 }
 
 
 .job-container .box-container .jlist{
   background-color: var(--white);
   border-radius: .5rem;
+  margin-bottom: 2rem;
   border: var(--border);
   padding: 1.5rem;
   box-shadow: var(--box-shadow);
@@ -362,13 +369,21 @@ h3 {
     padding-top: 2rem;
 }
 
-.details{
+.detail{
   color: var(--dark);
   text-decoration: underline;
   font-size: 1.5rem;
   font-weight: 600;
   justify-content: flex-end;
 
+}
+
+/* about us page */
+
+/* about us  */
+
+.about{
+  max-width: 1300px;
 }
 
 .about .section-title{
@@ -398,18 +413,22 @@ h3 {
   padding: 1rem 0;
   line-height: 1.8;
   color: var(--color);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
+/* about us  */
+
+
+/* service */
 .service-container .heading{
   color: var(--main-color);
 }
 
 
 .service-container .box-container{
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, 35rem);
-  gap: 5rem;
+  gap: 3rem;
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 4rem;
@@ -417,13 +436,13 @@ h3 {
 
 .service-container .box-container .box{
   background-color: var(--white);
-  border-radius: .5rem;
+  border-radius: 5px;
   border: var(--border);
-  padding: 1.5rem;
+  padding: 22px 30px;
   box-shadow: var(--box-shadow);
   overflow-x: hidden;
-  height: 28rem;
-  width: 35rem;
+   width: 400px;
+  line-height: 1.8;
   object-fit: contain;
 }
 
@@ -433,6 +452,30 @@ h3 {
   box-shadow: var(--light-bg);
 }
 
+.box button{
+  padding: 10px;
+  background-color: var(--main-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+.box:not(:last-child){
+  margin-bottom: 50px;
+}
+
+.hide{
+  display: none;
+}
+
+label{
+  display: inline-block;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--main-color);
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 12px;
+}
 
 .service-container .box-container .box .service{
   display: flex;
@@ -449,10 +492,107 @@ h3 {
 }
 
 .service-container .box-container .box .decription{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--black);
-  padding-top: rem;
 }
+
+/* service */
+
+/* testimonial */
+
+
+.testimonials-contains{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header .testimonialtitle{
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--main-color);
+  line-height: 1.2;
+}
+
+.testimonials{
+  padding: 55px;
+}
+
+.testimonials-item{
+  background-color: var(--light-color);
+  padding: 30px;
+  border-radius: 30px;
+
+}
+
+.testimonials-item .info{
+  display: flex;
+  align-items: center;
+}
+
+
+.testimg{
+  clip-path: circle(50% at 50% 50%);
+  width: 70px;
+  height: 70px;
+}
+
+.image{
+  max-width: 100%;
+}
+
+
+.testimonials-item .name{
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 1.2;
+  margin-left: 2rem;
+}
+
+.testimonials-item .job{
+  color: var(--light-black);
+  font-size: 15px;
+  margin-left: 2rem;
+}
+
+.testimonials-item p{
+  font-size: 12px;
+  margin-top: 20px;
+  color: var(--light-black);
+}
+
+
+.testimonials-item .rating{
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36, 88%, 66%);
+}
+
+.testimonials .swiper-pagination{
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet{
+  height: 12px;
+  width: 12px;
+  background-color: var(--copyright);
+
+}
+ 
+/* testimonials */
+
+/* about us page */
+
+
 
 
 .contact .box-container {
@@ -551,7 +691,7 @@ h3 {
 
 .container{
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-image: linear-gradient(rgba(0, 50, 39, 0.8), rgba(125, 134, 132, 0.8)), url(../image/img3.png);
   background-position: center;
   background-size: cover;
@@ -654,12 +794,13 @@ form p a{
 }
 
 .blocks{
-  min-height: 75px;
+  min-height: 30px;
   background-color: var(--white);
 }
 
 .containers {
   max-width: 1380px;
+  max-height: 1000px;
   margin-top: 60px;
   margin-right: auto;
   margin-bottom: 60px;
@@ -672,7 +813,30 @@ form p a{
 }
 
 .team-container{
-  min-height: 75px;
+  min-height: 30px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: 3rem;
+  justify-content: flex-start;
+  gap: 7rem;
+  align-items: flex-start;
+  background-color:var(--light-color);
+  
+}
+
+.team-section{
+  max-width: 1380px;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  align-items: center;
+  min-height: 50px;
   height: fit-content;
   width: 100%;
   display: flex;
@@ -682,12 +846,10 @@ form p a{
   margin-bottom: 0px;
   margin-left: auto;
   justify-content: space-evenly;
-  gap: 50px;
   align-items: center;
   background-color:var(--light-color);
-  
-}
 
+}
 .team-title{
   color: var(--main-color);
   margin-top: 0px;
@@ -705,17 +867,19 @@ form p a{
 .media-icon{
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 8px;
   color: var(--white);
  margin-right: .5rem;
+ margin-left: 4.5rem;
+ gap: 1rem;
  cursor: pointer;
 }
 
 .media-icon a i {
   font-size: 1.5rem;
   color: var(--color);
-  margin-right: 1rem;
-  padding: 1rem;
+  margin-right: .8rem;
+  padding: .8rem;
   border-radius: 15rem;
   border: 1px solid #82868a;
   
@@ -727,6 +891,7 @@ form p a{
 
 
 .card {
+  width: 50rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -738,7 +903,8 @@ form p a{
 }
 
 .cards-container {
-  width: 300px;
+  width: 60rem;
+  height: 20rem;
   margin-top: 0px;
   margin-right: 10px;
   margin-bottom: 25px;
@@ -748,26 +914,29 @@ form p a{
 }
 .founder{
   margin-top: 0px;
-  margin-right: 0px;
+  font-size: 10px;
+  margin-right: 35rem;
   margin-bottom: 10px;
   margin-left: 0px;
-  line-height: 25px;
+  line-height: 10px;
 }
 
 .name-block{
-  margin-right: 0px;
+  margin-right: 35rem;
   margin-left: 0px;
   line-height: 25px;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 800;
 }
 
 .team-image{
   clip-path: circle(50% at 50% 50%);
-  width: 130px;
-  height: 130px;
+  width: 70px;
+  height: 70px;
+  margin-top: 1rem;
+  margin-right: 35rem;
 }
 
 .member-image{
@@ -775,26 +944,26 @@ form p a{
 }
 
 .feature-description{
-  margin-top: 0px;
+  width: 30rem;
+  text-align: justify;
+  margin-top: -13rem;
   margin-right: 0px;
-  margin-bottom: 20px;
-  margin-left: 0px;
-  color: var(--main-color);
-  font-style: normal;
-  line-height: 30px;
-
+  margin-left: 25rem;
+  color: var(--color);
+  font-size: 1.2rem;
+  line-height: 20px;
 }
 
 
-.jobs-container .box-container{
+.jobs-container .boxs-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 40rem);
-    gap: 3rem;
+    gap: 4rem;
     align-items: flex-start;
     justify-content: center;
 }
 
-.jobs-container .box-container .box{
+.jobs-container .boxs-container .box{
     background-color: var(--white);
     border-radius: .5rem;
     border: var(--border);
@@ -803,20 +972,20 @@ form p a{
     overflow-x: hidden;
 }
 
-.jobs-container .box-container .box .company{
+.jobs-container .boxs-container .box .company{
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.jobs-container .box-container .box .company img{
+.jobs-container .boxs-container .box .company img{
     height: 7rem;
     width: 7rem;
     object-fit: contain;
 }
 
-.jobs-container .box-container .box .company h3{
+.jobs-container .boxs-container .box .company h3{
     font-size: 1.8rem;
     color: var(--black);
     text-overflow: ellipsis;
@@ -824,61 +993,61 @@ form p a{
     padding-bottom: .5rem;
 }
 
-.jobs-container .box-container .box .company p{
+.jobs-container .boxs-container .box .company p{
     color: var(--main-color);
     font-size: 1.6rem;
 
 }
 
-.jobs-container .box-container .box .job-title{
+.jobs-container .boxs-container .box .job-title{
     font-size: 2rem;
     color:var(--black);
     overflow-x: hidden;
     text-overflow: ellipsis;
 }
 
-.jobs-container .box-container .box .location{
+.jobs-container .boxs-container .box .location{
     padding: .2rem;
     font-size: 1.3rem;
     color: var(--color);
 }
 
-.jobs-container .box-container .box .location span{
+.jobs-container .boxs-container .box .location span{
     margin-right: .3rem;
     color: var(--main-color);
 }
 
-.jobs-container .box-container .box .Salary{
+.jobs-container .boxs-container .box .Salary{
     padding: .2rem;
     font-size: 1.3rem;
     color: var(--color);
 }
-.jobs-container .box-container .box .Salary span{
+.jobs-container .boxs-container .box .Salary span{
     margin-right: .3rem;
     color: var(--main-color);
 }
 
 
-.jobs-container .box-container .box .level{
+.jobs-container .boxs-container .box .level{
     padding: .2rem;
     font-size: 1.3rem;
     color: var(--color);
 }
 
-.jobs-container .box-container .box .level span{
+.jobs-container .boxs-container .box .level span{
     margin-right: .3rem;
     color: var(--main-color);
 }
 
 
-.jobs-container .box-container .box .tags{
+.jobs-container .boxs-container .box .tags{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 1.5rem 0;
 }
 
-.jobs-container .box-container .box .tags p{
+.jobs-container .boxs-container .box .tags p{
     padding: 1.2rem;
     border-radius: .5rem;
     background-color: var(--light-bg);
@@ -886,15 +1055,16 @@ form p a{
     color: var(--main-color);
 }
 
-.jobs-container .box-container .box .tags p i{
+.jobs-container .boxs-container .box .tags p i{
     margin-right: .5rem;
     color: var(--black);  
 }
 
-.jobs-container .box-container .box .fa-heart{
+.jobs-container .boxs-container .box .fa-heart{
     background-color: var(--light-bg);
     border-radius: .5rem;
     color: var(--main-color);
+    margin-left: 17rem;
     font-size: 1.8rem;
     cursor: pointer;
     height: 4rem;
@@ -902,9 +1072,14 @@ form p a{
     line-height: 4rem;
 }
 
-.jobs-container .box-container .box .fa-heart:hover{
-    background-color:var(--black);
+.jobs-container .boxs-container .box .fa-heart:hover{
+    background-color:var(--main-color);
     color: var(--white);
+}
+
+.job-filter .heading{
+  margin-top: 7rem;
+  color: var(--main-color);
 }
 
 .job-filter form{
@@ -913,6 +1088,8 @@ form p a{
   border: var(--border);
   border-radius: .5rem;
   padding: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 
 }
 
@@ -1099,6 +1276,156 @@ form p a{
 }
 
 
+.job-details .details{
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: .5rem;
+  background-color: var(--white);
+  padding: 2rem;
+}
+
+.job-details .details .job-info{
+  max-width: 30rem;
+  margin: 0 auto;
+  border-radius: .5rem;
+  background-color: var(--light-bg);
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.job-details .details .job-info img{
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.job-details .details .job-info h3{
+ padding: 1.5rem 0;
+ font-size: 2rem;
+ color: var(--black);
+}
+
+.job-details .details .job-info h3:hover{
+  text-decoration: underline;
+}
+.job-details .details .moreinfo{
+  margin-top: 2rem;
+}
+
+
+.job-details .details .moreinfo h3{
+  font-size: 2rem;
+  color: var(--dark);
+  padding: 1rem 0;
+}
+
+.job-details .details .moreinfo p{
+  padding: .5rem 0;
+  font-size: 1.6rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+
+
+
+.job-details .details .basic-details{
+  background-color: var(--light-bg);
+  margin: 1.5rem 0;
+  border-radius: .5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+
+}
+.job-details .details .basic-details h1{
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+.job-details .details .basic-details p{
+  color: var(--black);
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.job-details .details ul{
+  margin: 2rem ;
+  font-size: .5rem;
+}
+
+.job-details .details ul h3{
+  font-size: 2rem;
+}
+
+.job-details .details ul li{
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: var(--black);
+  margin-right: 1.5rem;
+}
+
+.job-details .details .description{
+  margin-top: 1.5rem;
+}
+
+.job-details .details .description h3{
+  font-size: 2rem;
+  color: var(--black);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.job-details .details .description h2{
+  color: var(--color);
+  font-size: 1.5rem;
+
+}
+
+
+.job-details .details .description ul{
+  margin: 2rem ;
+  font-size: .5rem;
+}
+
+.job-details .details .decription ul li{
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: var(--light-color);
+  margin-right: 1.5rem;
+}
+
+.job-details .details .save{
+  background-color: var(--light-bg);
+  border-radius: .5rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+
+}
+.job-details .details .save:hover{
+  background-color: var(--black);
+}
+
+.job-details .details .save i{
+  margin-right: .5rem;
+  color: var(--black);
+}
+
+.job-details .details .save span{
+  color: var(--black);
+}
+
+.job-details .details .save:hover i{
+  color: var(--white);
+}
+
+.job-details .details .save:hover span{
+  color: var(--white);
+}
+
 
 
 
@@ -1197,20 +1524,13 @@ form p a{
     padding: 2rem;
     background-color: var(--white);
     font-size: 1.5rem;
-    color: var(--light-color);
+    color: var(--copyright);
     line-height: 1.5;
 }
 
 .footer .credit span{
     color: var(--main-color);
 }
-
-
-
-
-
-
-
 
 
 
@@ -1325,6 +1645,19 @@ form p a{
 
   }
 }
+
+@media (max-width:982px){
+  html{
+    font-size: 45%;
+  }
+
+  .section-title{
+    font-size: 1.5rem;
+
+}
+}
+
+
 
 @media( max-width: 699px ){
   #menu{
