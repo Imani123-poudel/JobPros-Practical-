@@ -605,12 +605,12 @@ label{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image:  linear-gradient(rgba(0, 50, 39, 0.8), rgba(125, 134, 132, 0.3)), url(../image/background.png);
+  background-image:  linear-gradient(rgba(16, 85, 70, 0.5), rgba(125, 134, 132, 0.8)), url(../image/background.png);
   background-size: contain;
 }
 
 .contact .contactsection{
-  max-width: 1300px;
+  max-width: 800px;
   text-align: center;
 }
 
@@ -663,7 +663,7 @@ label{
   font-size: 16px;
   color: var(--white);
   flex-direction: column;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .contactcontainer .contactInfo .box .text h3{
@@ -684,10 +684,10 @@ label{
 .contactForm  form{
   background-color: var(--white);
   border: var(--border);
-  border-radius: .5rem;
+  border-radius: 2rem;
   box-shadow: var(--box-shadow);
   text-align: center;
-  padding: 1.5rem 3rem;
+  padding: 2rem 3rem ;
 
 }
 
@@ -736,10 +736,11 @@ label{
 }
 
 
+/* contact us page  */
 
 .container{
   width: 100%;
-  height: 140vh;
+  height: 120vh;
   background-image: linear-gradient(rgba(0, 50, 39, 0.8), rgba(125, 134, 132, 0.8)), url(../image/img3.png);
   background-position: center;
   background-size: cover;
@@ -749,7 +750,7 @@ label{
   width: 90%;
   max-width: 450px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--white);
@@ -816,8 +817,8 @@ form p a{
 
 .btn-field{
   width: 100%;
+  margin-top: 3rem;
   display: flex;
-  padding-top: 2.5rem;
   justify-content: space-between;
 }
 
@@ -836,10 +837,6 @@ form p a{
  height: 280px;
 }
 
-.input-group .input-field i{
-  color: var(--main-color);
-}
-
 .btn-field button.disable{
   background: var(--white);
   color: var(--main-color);
@@ -847,7 +844,7 @@ form p a{
 }
 
 .blocks{
-  min-height: 30px;
+  min-height: 75px;
   background-color: var(--white);
 }
 
@@ -866,28 +863,22 @@ form p a{
 }
 
 .team-container{
-  min-height: 30px;
+  min-height: 75px;
   height: fit-content;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0px;
   margin-right: auto;
-  margin-bottom: 0px;
   margin-left: 3rem;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   gap: 7rem;
-  align-items: flex-start;
   background-color:var(--light-color);
   
 }
 
 .team-section{
   max-width: 1380px;
-  padding-top: 3rem;
-  padding-right: 2rem;
-  padding-bottom: 3rem;
-  padding-left: 2rem;
+  padding-top: 3rem 2rem;
   align-items: center;
   min-height: 50px;
   height: fit-content;
@@ -949,7 +940,7 @@ form p a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 1rem;
   padding-right: 25px;
   padding-bottom: 30px;
   padding-left: 25px;
@@ -1441,9 +1432,14 @@ form p a{
 
 
 
+
+
 .footer{
     background-color: var(--main-color);
 }
+
+
+
 
 .footer .grid {
     display: grid;
@@ -1602,6 +1598,30 @@ form p a{
       font-size: 3rem;
 
   }
+  .card {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .cards-container {
+    width: 65rem;
+    height: 23rem;
+    padding-top: 1.5rem;
+  
+  }
+  
+  .team-image{
+    clip-path: circle(50% at 50% 50%);
+    width: 50px;
+    height: 50px;
+    padding-bottom: 6rem;
+    margin-right: 35rem;
+  }
+  
 }
 
 @media (max-width:982px){
@@ -1613,11 +1633,34 @@ form p a{
     font-size: 1.5rem;
 
 }
+
+.card {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.cards-container {
+  width: 60rem;
+  height: 23rem;
+
+}
+
+.team-image{
+  clip-path: circle(50% at 50% 50%);
+  width: 40px;
+  height: 40px;
+  padding-bottom: 6rem;
+  margin-right: 35rem;
+}
+
 }
 
 
 
-@media( max-width: 699px ){
+@media( max-width: 881px ){
   #menu{
     background-color: var(--white);
     display: block;
@@ -1683,6 +1726,36 @@ form p a{
     text-align: center;
 }
 
+.team-container{
+  gap: 4rem;
+  
+}
+
+.card {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.cards-container {
+  width: 60rem;
+  height: 23rem;
+
+}
+
+.team-image{
+  clip-path: circle(50% at 50% 50%);
+  width: 40px;
+  height: 40px;
+  padding-bottom: 6rem;
+  margin-right: 35rem;
+}
+
+
+
+
 }
 
 
@@ -1696,6 +1769,29 @@ form p a{
     font-size: 2.5rem;
   
   }
+
+  .card {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .cards-container {
+    width: 60rem;
+    height: 23rem;
+  
+  }
+  
+  .team-image{
+    clip-path: circle(50% at 50% 50%);
+    width: 40px;
+    height: 40px;
+    padding-bottom: 6rem;
+    margin-right: 35rem;
+  }
+  
 
   
 }
