@@ -257,8 +257,6 @@ h3 {
   width: 100%;
 
 }
-
-
 .category .heading{
   color: var(--main-color);
 }
@@ -478,17 +476,10 @@ label{
   margin-top: 12px;
 }
 
-.service-container .box-container .box .service{
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 
 .service-container .box-container .box .title{
   font-size: 1.7rem;
   color: var(--color);
-  padding-left: 7rem;
   padding-top: 2rem;
 }
 
@@ -600,7 +591,7 @@ label{
 .contact{
   position: relative;
   min-height: 100vh;
-  padding: 50px 100px;
+  padding: 20px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -697,13 +688,7 @@ label{
   padding-top: 1rem;
 }
 
-.contact  form .flex{
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 1rem;
-  position: relative;
 
-}
 
 .contact  form .flex .box{
   flex: 1 0 19rem;
@@ -896,9 +881,8 @@ form p a{
 }
 .team-title{
   color: var(--main-color);
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   line-height: 25px;
   font-size: 48px;
   font-weight: 600;
@@ -912,7 +896,7 @@ form p a{
   display: flex;
   justify-content: space-between;
   padding-top: 8px;
-  color: var(--white);
+ color: var(--white);
  margin-right: .5rem;
  margin-left: 4.5rem;
  gap: 1rem;
@@ -1228,9 +1212,6 @@ form p a{
 }
 
 
-
-
-
 .job-details .details{
   background-color: var(--white);
   box-shadow: var(--box-shadow);
@@ -1285,7 +1266,6 @@ form p a{
 }
 
 
-
 .job-details .details .basic-details{
   background-color: var(--light-bg);
   margin: 1.5rem 0;
@@ -1338,7 +1318,6 @@ form p a{
 
 }
 
-
 .job-details .details .description ul{
   margin: 2rem ;
   font-size: .5rem;
@@ -1381,76 +1360,20 @@ form p a{
   color: var(--white);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
     background-color: var(--main-color);
 }
 
-
-
-
 .footer .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 30rem);
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap: 1.3rem;
     justify-content: center;
     align-items: flex-start;
 }
 
 .footer .grid .box h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--white);
     margin: 1rem 0;
 }
@@ -1472,10 +1395,9 @@ form p a{
     margin-right: 2rem;
 }
 
-
 .footer .credit{
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--white);
     font-size: 1.5rem;
     color: var(--copyright);
@@ -1485,108 +1407,6 @@ form p a{
 .footer .credit span{
     color: var(--main-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width:1300px){
@@ -1656,7 +1476,64 @@ form p a{
   margin-right: 35rem;
 }
 
+.footer .grid {
+  grid-template-columns: repeat(auto-fit, 25rem);
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+
+.contact{
+  min-height: 75vh;
+  padding: 5px 50px;
+}
+
+.contact .contactsection h2{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contact .contactsection p{
+  font-size: 16px;
+  font-weight: 350;
+  color: var(--white);
+}
+
+.contactcontainer .contactInfo{
+  width: 60%;
+}
+
+.contactcontainer .contactInfo .box{
+  padding: 10px 0;
+}
+
+.contactcontainer .contactInfo .box .icon{
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.contactcontainer .contactInfo .box .text{
+  display: flex;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 350;
+}
+
+.contactcontainer .contactInfo .box .text h3{
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.contactcontainer .contactInfo .box .text p{
+  font-size: 15px;
+}
+
+}
+
 
 
 
@@ -1753,8 +1630,12 @@ form p a{
   margin-right: 35rem;
 }
 
-
-
+.footer .grid {
+  grid-template-columns: repeat(auto-fit, 25rem);
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 }
 
@@ -1771,7 +1652,7 @@ form p a{
   }
 
   .card {
-    width: 60rem;
+    width: 45rem;
     display: flex;
     flex-direction: column;
     padding-right: 25px;
@@ -1779,19 +1660,121 @@ form p a{
   }
   
   .cards-container {
-    width: 60rem;
-    height: 23rem;
+    width: 45rem;
+    height: 33rem;
   
   }
+  .feature-description{
+    width: 18rem;
+    text-align: justify;
+    margin-top: -13rem;
+    margin-right: 0px;
+    margin-left: 15rem;
+    color: var(--color);
+    font-size: 1.2rem;
+    line-height: 20px;
+  }
+  
   
   .team-image{
     clip-path: circle(50% at 50% 50%);
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     padding-bottom: 6rem;
     margin-right: 35rem;
   }
+
+  .footer .grid {
+    grid-template-columns: repeat(auto-fit, 20rem);
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   
+.contact{
+  min-height: 120vh;
+  padding: 5px 50px;
+}
+
+.contact .contactsection h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact .contactsection p{
+  font-size: 13px;
+  font-weight: 350;
+  color: var(--white);
+}
+
+.contactcontainer .contactInfo{
+  width: 60%;
+}
+
+.contactcontainer .contactInfo .box{
+  padding: 10px 0;
+}
+
+.contactcontainer .contactInfo .box .icon{
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.contactcontainer .contactInfo .box .text{
+  display: flex;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: 350;
+}
+
+.contactcontainer .contactInfo .box .text h3{
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.contactcontainer .contactInfo .box .text p{
+  font-size: 10px;
+}
+
+
+.contactForm{
+  width: 65%;
+}
+
+.contactForm  form{
+  padding: 1rem 5.5rem ;
+
+}
+
+.contact  form h3{
+  font-size: 10px;
+}
+
+.contact  form .flex .box{
+  padding: 0.5 0 9rem;
+  margin-bottom: -0.3rem;
+}
+
+.contact  form .input{
+  width: 100%;
+  border-radius: .5rem;
+  margin-bottom: -3rem;
+  font-size: 10px;
+
+}
+.contact  form p{
+  font-size: 10px;
+  padding-top: 2rem;
+  
+}
+.contact form textarea{
+  height: 12rem;
+  width: 7rem;
+}
 
   
 }
