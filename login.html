@@ -23,7 +23,7 @@
                     <li><a href="jobs.html">All Jobs</a></li>
                     <li> <a href="contact.html">Contact Us</a></li>
                     <li><a href="login.html">Account</a></li>
-                    <button id="w-btn"><a href="login.html">Join Us</a></button>
+                    <button id="w-btn"><a href="register.html">Register Now</a></button>
                  </ul>
 
                  <i  id="menu-btn" class='bx bx-menu'></i>
@@ -44,11 +44,6 @@
                         <div class="input-field" id="namefield">
                             <i class="fas fa-user"></i>
                             <input type="text" placeholder="Full Name">
-                        </div>
-
-                        <div class="input-field">
-                            <i class="fas fa-phone"></i>
-                            <input type="number" required min="0" max="9999999999" maxlength="20" placeholder="Phone number" id="numberfield">
                         </div>
 
                         <div class="input-field">
@@ -130,13 +125,11 @@
             let signupBtn = document.getElementById('signupBtn');
             let signinBtn = document.getElementById('signinBtn');
             let namefield = document.getElementById('namefield');
-            let numberfield = document.getElementById('numberfield');
             let title = document.getElementById('title');
 
 
             signinBtn.onclick = function(){
                 namefield.style.maxHeight = "0";
-                numberfield.style.maxHeight = "60px";
                 title.innerHTML = "Sign In";
                 signupBtn.classList.add("disable");
                 signinBtn.classList.remove("disable");
@@ -144,7 +137,6 @@
 
             signupBtn.onclick = function(){
                 namefield.style.maxHeight = "60px";
-                numberfield.style.maxHeight = "120px";
                 title.innerHTML = "Sign Up";
                 signupBtn.classList.remove("disable");
                 signinBtn.classList.add("disable");
