@@ -766,7 +766,7 @@ label{
 
 .input-field{
   background: var(--higlight);
-  margin: 15px 0;
+  margin: 15px 7px;
   border-radius: 3px;
   display: flex;
   align-items: center;
