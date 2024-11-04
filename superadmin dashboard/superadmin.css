@@ -11,8 +11,10 @@
   --white:#fff;
   --copyright:#53685f;
   --black: #000;
-  --light-black: #8a8787;
-  --body:#f3f3f3;
+  --light-black: #868484;
+  --body:#f7f7f7;
+  --hover:
+  #fcfcfc;
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.2);
   --border:.1rem solid rgba(0,0,0,.2);
   --color: rgb(0, 0, 0);
@@ -184,7 +186,7 @@ nav .form-group .icon{
     top: 50%;
     transform: translateY(-50%);
     right: 16px;
-    color: var(--copyright);
+
 }
 
 nav .nav-link{
@@ -200,8 +202,8 @@ nav .nav-link .badge{
     position: absolute;
     top: -12px;
     right: -12px;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid var(--light-color);
     background: var(--red);
@@ -216,7 +218,7 @@ nav .nav-link .badge{
 
 nav .divider {
 width: 1px;
-background: var(--dark);
+color: var(--white);
 height: 12px;
 display: block;
 }
@@ -229,26 +231,26 @@ nav .profile img{
     cursor: pointer;
 }
 
-nav .profile .profile-link{
+
+nav .profile .profile-link {
     position: absolute;
     top: calc(100% + 10px);
     right: 1rem;
-    background: var(--white);
+    background: var(--hover);
     padding: 10px 0;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+    box-shadow: 4px 4px 16px  var(--box-shadow);
     border-radius: 10px;
     width: 160px;
     opacity: 0;
     pointer-events: none;
-    transition: all .3s ease;
 }
 
 nav .profile .profile-link.show{
     opacity: 1;
-    pointer-events: none;
-    top: 60%;
-}
+    pointer-events: visible;
+    top: 20%;
 
+} 
 
 nav .profile .profile-link a{
     padding: 10px 16px;
@@ -257,13 +259,60 @@ nav .profile .profile-link a{
     font-size: 14px;
     color: var(--dark);
     align-items: center;
+    transition: all .3s ease;
+}
+
+nav .profile .profile-link a:hover{
+    background: var(--light-bg);
+}
+
+
+
+/*navbar*/
+
+
+/* main */
+main{
+    width: 100;
+    padding: 24px 20px 20px 20px;
+}
+
+main .title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+main .breadcrumbs{
+    display: flex;
+    grid-gap: 6px;
+}
+
+main .breadcrumbs li,
+main .breadcrumbs li a{
+    font-size: 14px;
+}
+
+main .breadcrumbs li a{
+    color: var(--main-color);
+}
+
+main .breadcrumbs li a.active,
+main .breadcrumbs li.divider {
+    color: var(--light-black);
+    pointer-events: none;
 }
 
 
 
 
 
-/*navbar*/
+
+
+
+
+
+/* main */
 
 
 /*content*/

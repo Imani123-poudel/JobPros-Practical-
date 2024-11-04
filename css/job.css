@@ -6,7 +6,7 @@
   --red: red;
   --higlight:#f0e8f1;
   --light-color:#dde9e4;
-  --light-bg:#eee;
+  --light-bg:#cfcdcd;
   --dark:#0b3527;
   --white:#fff;
   --copyright:#53685f;
@@ -16,6 +16,7 @@
   --border:.1rem solid rgba(0,0,0,.2);
   --color: rgb(0, 0, 0);
   --hover-color:#64c9b1;
+  --socialmedia:#4665bb;
   
 }
 
@@ -466,7 +467,7 @@ h3 {
   display: none;
 }
 
-label{
+/* label{
   display: inline-block;
   cursor: pointer;
   color: var(--white);
@@ -474,7 +475,7 @@ label{
   padding: 3px 13px;
   border-radius: 3px;
   margin-top: 12px;
-}
+} */
 
 
 .service-container .box-container .box .title{
@@ -723,7 +724,10 @@ label{
 
 /* contact us page  */
 
-.container{
+
+/* login page  */
+
+/* .container{
   width: 100%;
   height: 120vh;
   background-image: linear-gradient(rgba(0, 50, 39, 0.8), rgba(125, 134, 132, 0.8)), url(../image/img3.png);
@@ -825,7 +829,421 @@ form p a{
   background: var(--white);
   color: var(--main-color);
   border: 1px solid #82868a;
+} */
+
+/* 
+.container{
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 50, 39, 0.8), rgba(125, 134, 132, 0.8)), url(../image/img3.png);
+  background-position: center;
+  background-size: cover;
+  column-gap: 30px;
+
 }
+
+.form{
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 6px;
+  background: var(--white);
+}
+
+.form .signup{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.forms .show-signup .form .signup{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.forms.show-signup .form .login{
+  opacity: 0;
+  pointer-events: none;
+}
+
+header{
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-align: center;
+}
+
+form{
+  margin-top: 30px;
+}
+
+form .field{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.field input,
+.field button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.field input{
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid var(--light-bg);
+
+}
+
+.field input:focus{
+  border-bottom-width:3px ;
+}
+.eye-icon{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--copyright);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.field button{
+  color: var(--white);
+  background: var(--main-color);
+}
+
+.field button:hover{
+  background: var(--dark);
+}
+
+.form-link{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-link span,
+.form-link a{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form a{
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.form-content a:hover{
+  text-decoration: underline;
+}
+
+.line{
+  position: relative;
+  height: 0.5px;
+  width: 100%;
+  background-color: var(--hover-color);
+  margin: 36px 0;
+}
+
+.line::before{
+  content: 'Or';
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+  background-color: var(--white);
+  color: var(--main-color);
+  padding: 0 15px;
+}
+
+.media-options a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.facebook{
+  color: var(--white);
+  background-color: var(--socialmedia);
+
+}
+
+a.facebook span{
+  font-size: 14px;
+}
+
+a.facebook .facebook-icon{
+  height: 28px;
+  width: 28px;
+  color: var(--socialmedia);
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.facebook-icon,
+img.google-img{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+img.google-img{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+
+}
+
+a.google{
+  border: 1px solid var(--light-bg);
+}
+
+a.google span{
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+  color: var(--light-black);
+} */
+
+
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 50, 39, 0.8), rgba(125, 134, 132, 0.8)), url(../image/img3.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.container .signup{
+  display: none;
+}
+
+#check:checked ~ .signup{
+  display: block;
+}
+
+#check:checked ~ .login{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+.form{
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: var(--white);
+}
+
+.form .signup{
+  opacity: 0;
+  pointer-events: none;
+}
+
+header{
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--dark);
+  text-align: center;
+}
+
+form{
+  margin-top: 30px;
+}
+
+.form .field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+ 
+.field input,
+.field button{
+  height: 100%;
+  width: 100%;
+  border: none; 
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input{
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid var(--light-color);
+}
+
+.field input:focus{
+  border-bottom-width: 4px;
+}
+
+.eye-icon{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--main-color);
+  padding: 5px;
+}
+.field button{
+  color: var(--white);
+  background-color: var(--main-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.field button:hover{
+  background-color: var(--dark);
+
+}
+.form-link{
+  text-align: center;
+  margin-top: 15px;
+}
+ 
+.form-link span,
+.form-link a{
+  font-size: 14px;
+  font-weight: 400;
+}
+.form a{
+  color: var(--dark);
+ text-decoration: none;
+}
+
+.form-content a:hover{
+  text-decoration: underline;
+ }
+ 
+ .line{
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: var(--light-color);
+ }
+
+ .line::before{
+  content: 'OR';
+  position: absolute;
+  font-size: 1.2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0 15px;
+ }
+
+.media-options a{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+
+a.facebook{
+  color: var(--white);
+   background-color: var(--socialmedia);
+}
+
+a.facebook span{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+a.facebook .facebook-icon{
+  height: 28px;
+  width: 28px;
+  color: var(--socialmedia);
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.facebook-icon,
+img.google-img{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+img.google-img{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+
+}
+
+a.google{
+  border: 1px solid var(--light-color);
+}
+
+a.google span{
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.6;
+  color: var(--black);
+}
+
+.align{
+  font-size: 17px;
+  text-align: center;
+
+}
+
+.align label{
+color: var(--main-color);
+cursor: pointer;
+}
+
+.align label:hover{
+  text-decoration: underline;
+}
+
+
+
+
+/* login page  */
+
+
+
+
+
+
+
+
+
+
 
 .blocks{
   min-height: 75px;
@@ -1447,7 +1865,7 @@ form p a{
   flex-direction: column;
 }
 
-label{
+.form-control label{
   font-size: 15px;
   margin-bottom: 5px;
 }
@@ -1469,8 +1887,8 @@ button{
   border: transparent solid 2px;
   color: var(--white);
   border-radius: 8px;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
   

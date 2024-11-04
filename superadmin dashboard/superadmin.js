@@ -30,7 +30,7 @@ allDropdown.forEach(item=> {
 
 
 // PROFILE DROPDOWN
-const profile= document.querySelector('nav .profile');
+const profile = document.querySelector('nav .profile');
 const imgProfile = profile.querySelector('img');
 const dropdownProfile = profile.querySelector('.profile-link');
 
@@ -39,12 +39,12 @@ imgProfile.addEventListener('click', function ()  {
 })
 
 
-// window.addEventListener('click', function (e) {
-//     if(e.target !== imgProfile) {
-//         if(e.target !== dropdownProfile) {
-//             if(dropdownProfile.classList.contains('show')) {
-//                 dropdownProfile.classList.remove('show');
-//             }
-//         }
-//     }
-// })
+window.addEventListener('click', function (e) {
+    if(e.target !== imgProfile) {
+        if(e.target !== dropdownProfile) {
+            if(dropdownProfile.classList.contains('show')) {
+                dropdownProfile.classList.remove('show');
+            }
+        }
+    }
+})

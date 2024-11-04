@@ -34,43 +34,115 @@
         </nav>
           <!-- navbar  Section-->
 
-         <!-- login section -->
+     <!-- login section -->
 
-        <div class="container">
-            <div class="form-box">
-                <h1  id="title">Sign Up</h1>
-                <form action="">
-                    <div class="input-group">
-                        <div class="input-field" id="namefield">
-                            <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Full Name">
+       <!-- login -->
+        <section class="container forms">
+            <input type="checkbox" id="check">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
                         </div>
 
-                        <div class="input-field">
-                            <i class="fas fa-envelope "></i>
-                            <input type="email" placeholder="Email Address">
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        <div class="form-link">
+                            <a href="#" class="forget-pass"> Forget Password?</a>
                         </div>
 
-                        <div class="input-field">
-                            <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Password">
+                        <div class="field button-field">
+                            <button>Login</button>
                         </div>
-                        <p>Forget Password <a href="#">Click Here</a></p>
-                    </div>
 
-                    <div class="btn-field">
-                        <button type="button" id="signupBtn">Sign Up</button>
-                        <button type="button" id="signinBtn" class="disable">Sign In</button>
-                    </div>
+                    </form>
 
-                </form>
+                    <div class="form-link">
+                        <span class="align">Don't have an account?   
+                            <label for="check">SignUp</label>
+                        </span>
+                     </div>
+                </div>
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Log In via Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                     <img src="image/googlelogo.png" alt="" class="google-img">
+                        <span>Log In via Google</span>
+                    </a>
+                </div>
+
             </div>
 
-        </div>
-
-         <!-- login section -->
+            <!-- signup -->
 
 
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Signup</header>
+
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Create a Password" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm your Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+
+                    </form>
+
+                    <div class="form-link">
+                        <span class="align">Already have an account? 
+                            <label for="check">Login</label>
+                        </span>
+                     </div>
+                </div>
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Log In via Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                     <img src="image/googlelogo.png" alt="" class="google-img">
+                        <span>Log In via Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- login -->
+
+    <!-- login section -->
 
    
              <!-- footer section -->
@@ -121,28 +193,7 @@
 
 
         <script src="js/job.js"></script>
-        <script>
-            let signupBtn = document.getElementById('signupBtn');
-            let signinBtn = document.getElementById('signinBtn');
-            let namefield = document.getElementById('namefield');
-            let title = document.getElementById('title');
 
-
-            signinBtn.onclick = function(){
-                namefield.style.maxHeight = "0";
-                title.innerHTML = "Sign In";
-                signupBtn.classList.add("disable");
-                signinBtn.classList.remove("disable");
-            }
-
-            signupBtn.onclick = function(){
-                namefield.style.maxHeight = "60px";
-                title.innerHTML = "Sign Up";
-                signupBtn.classList.remove("disable");
-                signinBtn.classList.add("disable");
-            }
-
-        </script>
     </body>
 
 </html>
